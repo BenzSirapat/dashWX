@@ -1,8 +1,10 @@
 import React from "react";
 import "./topbar.css";
 import { NotificationsNone } from "@mui/icons-material/";
-import LanguageIcon from "@mui/icons-material/Language";
+// import LanguageIcon from "@mui/icons-material/Language";
 import SettingsIcon from "@mui/icons-material/Settings";
+import LanguageSelector from "./Language";
+
 const Topbar = () => {
   return (
     <div className="topbar">
@@ -16,11 +18,11 @@ const Topbar = () => {
             <span className="topIconBadge">2</span>
           </div>
           <div className="topbarIconContainer">
-            <LanguageIcon />
-            <span className="topIconBadge">2</span>
+            <SettingsIcon />
           </div>
           <div className="topbarIconContainer">
-            <SettingsIcon />
+            <LanguageSelector/>
+            <span className="topIconBadge">2</span>
           </div>
           <img
             src="https://image.shutterstock.com/image-photo/isolated-portrait-smiling-business-woman-260nw-684509272.jpg"
